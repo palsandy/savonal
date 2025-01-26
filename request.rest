@@ -1,0 +1,31 @@
+GET http://localhost:3000/users
+
+###
+GET http://localhost:3000/users/1
+
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "username": "John Doe",
+    "email": "john@gmail.com",
+    "password": "12345",
+    "jabatan": "pemilik"
+}
+
+###
+PATCH http://localhost:3000/users/1
+Content-Type: application/json
+
+
+{
+    "username": "Naufal",
+    "email": "naufal@gmail.com",
+    "password": "123456asd",
+    "jabatan": "pemilik"
+}
+
+
+###
+DELETE http://localhost:3000/users/2
